@@ -16,9 +16,8 @@ namespace AoC2024
             data = File.ReadAllLines("data.txt");
         }
 
-        public string PartA(int logLevel = 1)
+        public override string PartA()
         {
-            this.logLevel = logLevel;
             int safeCount = 0;
             foreach (string line in data)
             {
@@ -92,9 +91,8 @@ namespace AoC2024
             return result;
         }
 
-        public string PartB(int logLevel = 1)
+        public override string PartB()
         {
-            this.logLevel = logLevel;
             int safeCount = 0;
             foreach (string line in data)
             {

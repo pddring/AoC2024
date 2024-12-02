@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace AoC2024
             data = File.ReadAllLines("data.txt");
         }
 
-        public string PartA()
+        public override string PartA()
         {
             List<int> Left = new List<int>();
             List<int> Right = new List<int>();
@@ -50,7 +51,7 @@ namespace AoC2024
             return total.ToString();
         }
 
-        public string PartB()
+        public override string PartB()
         {
             List<int> Left = new List<int>();
             Dictionary<int,int> Right = new Dictionary<int, int>();

@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace AoC2024
 {
-    internal class Day
+    internal abstract class Day
     {
         public string[] data;
+        public const string PART_A_MESSAGE = "__________                __       _____       \r\n\\______   \\_____ ________/  |_    /  _  \\   /\\ \r\n |     ___/\\__  \\\\_  __ \\   __\\  /  /_\\  \\  \\/ \r\n |    |     / __ \\|  | \\/|  |   /    |    \\ /\\ \r\n |____|    (____  /__|   |__|   \\____|__  / \\/ \r\n                \\/                      \\/     ";
+        public const string PART_B_MESSAGE = "__________                __    __________     \r\n\\______   \\_____ ________/  |_  \\______   \\ /\\ \r\n |     ___/\\__  \\\\_  __ \\   __\\  |    |  _/ \\/ \r\n |    |     / __ \\|  | \\/|  |    |    |   \\ /\\ \r\n |____|    (____  /__|   |__|    |______  / \\/ \r\n                \\/                      \\/     ";
         
         public int logLevel = 0;
 
@@ -26,5 +28,13 @@ namespace AoC2024
             }
             return sb.ToString();
         }
+
+        public Day()
+        {
+            data = new string[0];
+        }
+
+        public abstract string PartA();
+        public abstract string PartB();
     }
 }
