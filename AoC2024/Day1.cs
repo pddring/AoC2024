@@ -10,9 +10,9 @@ namespace AoC2024
     internal class Day1: Day
     {
 
-        public Day1(bool debug=true)
+        public Day1(int logLevel=1)
         {
-            this.debug = debug;
+            this.logLevel = logLevel;
             data = File.ReadAllLines("data.txt");
         }
 

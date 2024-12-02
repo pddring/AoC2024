@@ -9,11 +9,22 @@ namespace AoC2024
     internal class Day
     {
         public string[] data;
-        public bool debug;
+        
+        public int logLevel = 0;
 
-        public void Log(string message)
+        public void Log(string message, int level = 1)
         {
-            if (debug) Console.WriteLine(message);
+            if (level >= logLevel) Console.WriteLine(message);
+        }
+
+        public string ListToString(List<int> list)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach(object item in list)
+            {
+                sb.Append($"{item} ");
+            }
+            return sb.ToString();
         }
     }
 }
