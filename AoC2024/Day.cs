@@ -31,7 +31,7 @@ namespace AoC2024
 
         public Day()
         {
-            data = new string[0];
+            data = File.ReadAllLines("data.txt");
         }
 
         public abstract string PartA();
