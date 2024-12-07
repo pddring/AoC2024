@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace AoC2024
 {
-    internal class Day5 : Day
+    internal class Day7 : Day
     {
-        // implemented in python
         public override string PartA()
         {
             return "Not implemented yet";
