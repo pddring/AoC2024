@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Day solver = new Day8();
+            Day solver = new Day9();
             Console.WriteLine(Day.PART_A_MESSAGE);
             Console.WriteLine($"Part A: {solver.PartA()}");
             
