@@ -4,10 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Day solver = new Day9();
+            Day solver = new Day10();
+            solver.logLevel = 2;
             Console.WriteLine(Day.PART_A_MESSAGE);
             Console.WriteLine($"Part A: {solver.PartA()}");
-            
             
             Console.WriteLine(Day.PART_B_MESSAGE);
             Console.WriteLine($"Part B: {solver.PartB()}");
